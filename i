@@ -2,35 +2,34 @@ dex.html===
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World App</title>
+    <title>Hello World Page</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
         button {
             padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
             border: none;
             border-radius: 5px;
-            color: white;
+            cursor: pointer;
         }
-        #color-button {
-            background-color: #3498db;
+
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <button id="color-button">Change Color</button>
-    
+    <div style="text-align: center; margin-top: 20vh;">
+        <h1>Hello, World!</h1>
+        <button id="colorButton">Change Color</button>
+    </div>
+
     <script>
-        const button = document.getElementById('color-button');
-        
+        const button = document.getElementById('colorButton');
+
         button.addEventListener('click', function() {
             const randomColor = Math.floor(Math.random()*16777215).toString(16);
-            button.style.backgroundColor = "#" + randomColor;
+            document.body.style.backgroundColor = '#' + randomColor;
         });
     </script>
 </body>
@@ -38,26 +37,26 @@ dex.html===
 ===END===
 
 ===FILE:README.md===
-# Hello World App
+# Hello World Page
 
 ## Description
-This is a simple web application that displays "Hello World!" and has a button to change its color.
+A simple web page that displays "Hello, World!" and includes a button to change the background color.
 
 ## Usage
-Click the "Change Color" button to see the background color change.
+Simply open the index.html file in a web browser. Click the "Change Color" button to see the background color change.
 
 ## Features
-- Display "Hello World!"
-- Change background color on button click
+- Displays "Hello, World!" message
+- Button to change background color
 
 ## License
 MIT
 ===END===
 
 ===FILE:style.css===
-/* Additional CSS if needed */
+/* No additional CSS needed for this application */
 ===END===
 
 ===FILE:script.js===
-// Additional JavaScript if needed
+// No additional JavaScript needed for this application
 ===END===
