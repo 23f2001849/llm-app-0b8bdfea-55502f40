@@ -7,7 +7,7 @@ dex.html===
         button {
             padding: 10px 20px;
             background-color: #007bff;
-            color: #fff;
+            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -19,17 +19,15 @@ dex.html===
     </style>
 </head>
 <body>
-    <div style="text-align: center; margin-top: 20vh;">
-        <h1>Hello, World!</h1>
-        <button id="colorButton">Change Color</button>
-    </div>
+    <h1>Hello World!</h1>
+    <button id="colorButton">Change Color</button>
 
     <script>
         const button = document.getElementById('colorButton');
 
         button.addEventListener('click', function() {
             const randomColor = Math.floor(Math.random()*16777215).toString(16);
-            document.body.style.backgroundColor = '#' + randomColor;
+            document.body.style.backgroundColor = "#" + randomColor;
         });
     </script>
 </body>
@@ -40,13 +38,13 @@ dex.html===
 # Hello World Page
 
 ## Description
-A simple web page that displays "Hello, World!" and includes a button to change the background color.
+A simple web page that displays "Hello World!" and contains a button to change the background color of the page.
 
 ## Usage
-Simply open the index.html file in a web browser. Click the "Change Color" button to see the background color change.
+Just open the index.html file in a web browser. Click the "Change Color" button to see the background color change.
 
 ## Features
-- Displays "Hello, World!" message
+- Display "Hello World!"
 - Button to change background color
 
 ## License
